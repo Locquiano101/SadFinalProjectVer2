@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+td {
+  color: black;
+  font-size: 24px;
+}
+/* div {
+  border: 1px solid white;
+} */
+body {
+  display: flex;
+  font-family: "League Spartan", sans-serif; /* Apply League Spartan font */
+  flex-direction: column;
+  color: white;
+  background-color: #efe8e2;
+}
+/* 
+********************
+SECTIONS
+********************
+*/
+
+.section {
+  height: auto;
+}
+#section2,
+#section3,
+#section4,
+#section5,
+#section6 {
+  padding-top: 3.5em;
+}
+/* 
+********************
+NAVIGATION
+********************
+*/
+
+.sticky-nav {
+  padding: 1em 0;
+  position: fixed;
+  width: 100vw;
+  z-index: 1000; /* Set higher z-index to bring the nav above the slideshow */
+}
+.sticky-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.img-logo-holder {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.camarines-norte-seal {
+  height: auto;
+  width: 48px;
+}
+
+.sticky-nav ul {
+  text-align: right;
+}
+
+.sticky-nav ul li {
+  display: inline-block;
+}
+
+.sticky-nav ul li a {
+  color: white;
+  padding: 2em;
+  text-decoration: none;
+  font-size: 16px;
+  transition: font-size 0.3s ease; /* Specify the property to transition */
+}
+
+.sticky-nav ul li a:hover {
+  font-size: 18px;
+}
+
+.sticky-nav ul li a.active {
+  color: lightgreen;
+}
+
+/* 
+********************
+SECTION 1
+********************
+*/
+.slideshow-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideshow {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.overlay-container {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(
+    -25%,
+    -25%
+  ); /* Centers the content horizontally and vertically */
+  display: flex;
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: left;
+  font-size: 36px;
+  color: white;
+  text-align: left;
+  z-index: 10; /* Increase the z-index to ensure it's on top */
+}
+
+.button {
+  margin-top: 15px; /* Add space between text and button */
+  padding: 10px 20px;
+  width: 175px;
+  height: 65px;
+  font-size: 24px;
+  cursor: pointer;
+  position: justify;
+  align-items: center;
+  background-color: #4e7966;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  z-index: 100;
+}
+
+/* 
+********************
+SECTION 2
+********************
+*/
+.section2-item {
+  padding: 0 3.5em;
+  font-size: 24px;
+  background-color: #efe8e2;
+  text-align: justify;
+}
+.about-text {
+  color: #353535;
+}
+
+/* 
+********************
+SECTION 3
+********************
+*/
+.section3-item {
+  background-color: #ffffff;
+  width: auto;
+
+  text-align: center; /* Ensure text inside section is centered */
+}
+h1 {
+  font-family: "League Gothic", sans-serif;
+  font-size: 5em;
+}
+.service-title {
+  color: #4e7966;
+  padding: 3.5em;
+  display: flex;
+  justify-content: center;
+}
+.service-title2 {
+  color: #763a3a;
+  padding: 3.5em;
+  display: flex;
+  justify-content: center;
+}
+.service-container {
+  display: flex;
+
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.service-item {
+  padding: 3em;
+  width: 25%;
+  text-align: center;
+}
+/* 
+********************
+SECTION 4
+********************
+*/
+.penro-officer-name {
+  font-family: "League Gothic", sans-serif;
+  color: #4e7966;
+  font-size: 36px;
+  text-align: center;
+}
+.section4-item {
+  background-image: url("penro-team-background.png");
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.more-info {
+  display: flex;
+  padding: 2em 0;
+  gap: 2em;
+  flex-direction: column;
+  background-color: #b1cabf;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2em;
+}
+.rock-holder {
+  background-color: #763a3a;
+
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gravel {
+  display: flex;
+  background-color: #e9e9e9;
+  border-radius: 1em;
+  color: #353535;
+  gap: 1em;
+
+  padding: 1em;
+}
+.office-service-title {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3.5em;
+  text-align: left;
+}
+.table {
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-picture {
+  width: 100px;
+  height: auto;
+}
+
+.table-section {
+  margin-top: 30px;
+}
+.service-description {
+  padding: 0 3.5em;
+}
+table {
+  padding: 1em;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #4e7966;
+  color: white;
+}
+
+thead th {
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+}
+
+tbody tr {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+  padding: 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* 
+********************
+SECTION 4
+********************
+*/
+.cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #efe8e2;
+  border-radius: 2em;
+  margin: 2em;
+  border: 1px solid white;
+  padding: 2em;
+  width: 50%; /* Each cell now takes up half the width of the row */
+}
+.table2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cell2 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border: 1px solid white;
+  padding: 2em;
+  width: 50%; /* Each cell now takes up half the width of the row */
+}
+#section5 {
+  background-color: #efe8e2;
+}
+.cell-content {
+  display: none; /* Hidden by default */
+}
+/* 
+********************
+FOOTER
+********************
+*/
+#spartan-text-item {
+  color: #efe8e2;
+}
+.loginbutton {
+  background-color: #b1cabf;
+  border: 0;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #353535;
+  padding: 1em 2em;
+}
+.footer {
+  padding: 24px;
+  background-color: black;
+  display: flex;
+  height: auto;
+}
+.faqs-holder {
+  color: black;
+  font-weight: 550;
+}
+.socmedia {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+.img-svg {
+  height: 52px;
+  width: 52px;
+}
+
+.socmedia-item {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+.penro-map {
+  height: auto;
+  width: 75%;
+}
+.footer-item {
+  height: 10em;
+  flex: 1;
+}
+.footer-item1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
