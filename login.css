@@ -1,24 +1,85 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "League Spartan", sans-serif; /* Apply League Spartan font */
+  font-family: "League Spartan", sans-serif;
 }
 body {
+  object-fit: cover;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
+#section2 {
+  background-image: url("login-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+button {
+  border-radius: 25px;
+  background-color: #763a3a;
+  color: #ffffff;
+  width: 323px;
+  padding: 20px;
+  stroke-width: 0;
+  border: none; /* Removes the border */
+  outline: none; /* Removes the outline */
+}
 div {
-  display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+}
+.admin-login {
+  background-color: white;
+  padding: 5em;
+  flex-direction: column;
+  border-radius: 50px;
+  margin: 10px;
+  gap: em;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+  color: #aaa;
+  pointer-events: none;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: 0;
+  left: 10px;
+  font-size: 12px;
+  color: #333;
+}
+
+input:focus {
+  border-color: #333;
+  outline: none;
 }
 .login-container {
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
+}
+.button-container {
+  margin: 15px; /* Adds space between the divs */
 }
 .login-container-right,
 .login-container-middle,
@@ -56,10 +117,72 @@ div {
 }
 .unscrollable {
   height: 100vh;
-  width: auto;
   display: flex;
+  width: auto;
   justify-content: center;
-  align-items: center;
+  overflow: scroll;
+}
+.scroll-container {
+  display: flex;
+
+  gap: 1em;
+  width: 45vw;
+  padding: 10px;
+  align-items: start;
+  height: 80vh;
+  overflow-y: scroll;
+  border-radius: 10px; /* Rounded corners */
+  background: red; /* White background for content */
+}
+.input {
+  padding: 10px;
+  margin: 5px;
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+}
+/* Custom scrollbar styles */
+.scroll-container::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #007bff; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Darker color on hover */
+}
+.content {
+}
+/* Colors for inner divs */
+.content .red {
+  background-color: #e63946;
+}
+.content .blue {
+  background-color: #f1faee;
+}
+.content .green {
+  background-color: #a8dadc;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  border-radius: 10px; /* Rounded corners */
+}
+
+.section-container {
+  height: 80vh;
+  background-color: white;
+  width: 50%;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  border: 1px solid black; /* Just for visibility */
+  border: 1px solid black;
+}
+.bruh {
+  flex-direction: column;
 }
 /* .unscrollable-section {
   background-color: rgba(255, 255, 255, 0.5);

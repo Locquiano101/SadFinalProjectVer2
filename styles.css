@@ -373,7 +373,6 @@ FOOTER
   height: 52px;
   width: 52px;
 }
-
 .socmedia-item {
   margin: 0;
   padding: 0;
@@ -393,4 +392,8 @@ FOOTER
   justify-content: center;
   align-items: center;
   flex: 1;
+}
+.wtf {
+  margin: 1em;
+  border: 1px solid black;
 }
