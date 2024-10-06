@@ -94,40 +94,125 @@
       </div>
     </div>
   -->
-    <div id="section4" class="unscrollable">
-      <div class="bruh">
-        <h1>SIGN UP</h1>
-        <br /><br />
-
-        <div class="scroll-container">
-          <div class="content">
-            <div class="input">
+    <div id="section2" class="unscrollable">
+      <div class="scroll-container">
+        <h1>CNPENRO-MIS</h1>
+        <br />
+        <p style="opacity: 0.5">Admin</p>
+        <div class="content">
+          <div class="client-name">
+            <h2>Name</h2>
+            <div class="input-holder">
               <input
-                type="password"
+                type="text"
                 name="text"
-                class="password"
-                placeholder="password"
+                class="input2"
+                placeholder="First Name"
+              />
+              <br />
+              <br />
+              <input
+                type="text"
+                name="text"
+                class="input2"
+                placeholder="last Name"
               />
             </div>
-            <div class="input">
+            <div class="dayumm">
               <input
-                type="password"
+                type="text"
                 name="text"
-                class="password"
-                placeholder="password"
+                class="input2"
+                placeholder="Middle Initial (Optional)"
+              />
+              <br />
+              <br />
+              <input
+                type="text"
+                name="text"
+                class="input2"
+                placeholder="suffix(Optional)"
               />
             </div>
-            <div class="input">
+            <h2>Gender</h2>
+            <div class="input-holder">
+              <select class="input2" id="gender" name="gender">
+                <option value="" disabled selected>Select your option</option>
+                <!-- Placeholder option -->
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-binary</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <h2>Contact No.</h2>
+            <div class="input-holder">
               <input
-                type="password"
-                name="text"
-                class="password"
-                placeholder="password"
+                class="input2"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                min="0"
+                required
+                oninput="this.value = this.value.slice(0, 11)"
               />
+            </div>
+            <h2>Address</h2>
+            <div class="input-holder">
+              <input
+                type="text"
+                name="text"
+                class="input2"
+                placeholder="Street/Purok"
+              />
+            </div>
+            <div class="input-holder">
+              <input
+                type="text"
+                name="text"
+                class="input2"
+                placeholder="Username"
+              />
+            </div>
+            <div class="input-holder">
+              <input
+                type="text"
+                name="text"
+                class="input2"
+                placeholder="Username"
+              />
+            </div>
+            <h2>Nationality</h2>
+            <div class="input-holder">
+              <select class="input2" id="gender" name="gender">
+                <option value="" disabled selected>
+                  Select your Nationality
+                </option>
+                <!-- Placeholder option -->
+                <option value="male">Filipino</option>
+                <option value="female">American</option>
+                <option value="other">Other</option>
+              </select>
             </div>
           </div>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>This is a Pop-Up!</h2>
+              <p>You can place your content here.</p>
+              <div>
+                <button>alsjdhaskjlhd</button>
+                <button>alskdlaksjhd</button>
+              </div>
+            </div>
+          </div>
+          <button id="openPopup">Sign in</button>
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

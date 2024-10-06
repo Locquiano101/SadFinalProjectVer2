@@ -120,80 +120,110 @@ input:focus {
   display: flex;
   width: auto;
   justify-content: center;
-  overflow: scroll;
+  overflow: hidden;
 }
-.scroll-container {
-  display: flex;
+/* SIGN UP */
 
-  gap: 1em;
-  width: 45vw;
-  padding: 10px;
-  align-items: start;
+/* Scrollable container */
+/* Scrollable container */
+
+/* Scrollable container */
+/* Scrollable container */
+.scroll-container {
   height: 80vh;
+  width: 50vw;
+  padding: 1em 0;
+  color: white;
+  background-color: #4e7966;
   overflow-y: scroll;
-  border-radius: 10px; /* Rounded corners */
-  background: red; /* White background for content */
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 0.7em; /* Rounded corners */
 }
-.input {
-  padding: 10px;
-  margin: 5px;
-  height: 300px;
-  width: 300px;
-  background-color: blue;
-}
+
 /* Custom scrollbar styles */
 .scroll-container::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
-}
-
-.scroll-container::-webkit-scrollbar-thumb {
-  background: #007bff; /* Color of the scrollbar thumb */
-  border-radius: 10px; /* Rounded corners */
-}
-.scroll-container::-webkit-scrollbar-thumb:hover {
-  background: #0056b3; /* Darker color on hover */
-}
-.content {
-}
-/* Colors for inner divs */
-.content .red {
-  background-color: #e63946;
-}
-.content .blue {
-  background-color: #f1faee;
-}
-.content .green {
-  background-color: #a8dadc;
+  width: 10px; /* Width of the scrollbar */
 }
 
 .scroll-container::-webkit-scrollbar-track {
-  border-radius: 10px; /* Rounded corners */
+  background: #f0f0f0; /* Background of the scrollbar track */
+  border-radius: 0 1em 1em 0; /* Rounded corners */
 }
 
-.section-container {
-  height: 80vh;
-  background-color: white;
-  width: 50%;
-  flex-direction: column;
-  margin: 1em;
-  padding: 1em;
-  overflow-y: scroll; /* Enable vertical scrolling */
-  border: 1px solid black; /* Just for visibility */
-  border: 1px solid black;
+.scroll-container::-webkit-scrollbar-thumb {
+  border-radius: 10px; /* Rounded corners */
+  border-radius: 0 1em 1em 0; /* Rounded corners */
+  background: #763a3a; /* Color of the scrollbar thumb */
 }
-.bruh {
-  flex-direction: column;
+
+/* Inner content to make the container scrollable */
+.content {
+  width: auto;
+  padding: 10px;
 }
-/* .unscrollable-section {
-  background-color: rgba(255, 255, 255, 0.5);
-  display: flex;
-  gap: 1em;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 3.5em 0;
-  border: 1px solid black;
+/* Example content styling */
+.content div {
+  width: 500px;
+  margin: 10px;
   height: auto;
+  padding: 10px;
+}
+.input2 {
+  padding: 10px;
+  width: 80%;
+}
+.input-holder {
+  padding: 0 !important;
+  width: 100%;
+}
+.dayumm {
+  flex-direction: row;
   width: 33%;
-} */
+  gap: 1px;
+  padding: 0 !important;
+  justify-content: space-between !important;
+}
+.client-name {
+  border-radius: 1em;
+  border: 1px solid black;
+  color: #4e7966;
+  background-color: white;
+  justify-content: start;
+  align-items: start;
+  padding: 2em !important;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-around;
+  margin: 15% auto; /* Center the modal */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  cursor: pointer;
+}
