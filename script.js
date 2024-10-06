@@ -119,6 +119,9 @@ function openanotherfile() {
   window.open("Login.html", "_blank");
 }
 
+function openanotherfile2() {
+  window.open("admin-dashboard.html", "_blank");
+}
 /*
  *************** SIGN UP BUTTON ***************
  */

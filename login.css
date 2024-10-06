@@ -1,85 +1,23 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "League Spartan", sans-serif;
+  font-family: "League Spartan", sans-serif; /* Apply League Spartan font */
 }
 body {
-  object-fit: cover;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-}
-#section2 {
-  background-image: url("login-background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex-direction: column;
-}
-button {
-  border-radius: 25px;
-  background-color: #763a3a;
-  color: #ffffff;
-  width: 323px;
-  padding: 20px;
-  stroke-width: 0;
-  border: none; /* Removes the border */
-  outline: none; /* Removes the outline */
 }
 div {
+  display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-}
-.admin-login {
-  background-color: white;
-  padding: 5em;
-  flex-direction: column;
-  border-radius: 50px;
-  margin: 10px;
-  gap: em;
-}
-.input-container {
-  position: relative;
-  margin-bottom: 15px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-}
-
-label {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(100%);
-  transition: all 0.3s ease;
-  color: #aaa;
-  pointer-events: none;
-}
-
-input:focus + label,
-input:not(:placeholder-shown) + label {
-  top: 0;
-  left: 10px;
-  font-size: 12px;
-  color: #333;
-}
-
-input:focus {
-  border-color: #333;
-  outline: none;
 }
 .login-container {
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
-}
-.button-container {
-  margin: 15px; /* Adds space between the divs */
 }
 .login-container-right,
 .login-container-middle,
@@ -117,113 +55,51 @@ input:focus {
 }
 .unscrollable {
   height: 100vh;
+  width: auto;
   display: flex;
-  width: auto;
   justify-content: center;
-  overflow: hidden;
+  align-items: center;
 }
-/* SIGN UP */
-
-/* Scrollable container */
-/* Scrollable container */
-
-/* Scrollable container */
-/* Scrollable container */
-.scroll-container {
-  height: 80vh;
-  width: 50vw;
-  padding: 1em 0;
-  color: white;
-  background-color: #4e7966;
-  overflow-y: scroll;
+/* SECTION #2 */
+.admin-login {
+  border: 1px solid black;
+  border-radius: 2em;
   flex-direction: column;
-  gap: 10px;
-  border-radius: 0.7em; /* Rounded corners */
+  padding: 5em;
+  gap: 1em;
 }
-
-/* Custom scrollbar styles */
-.scroll-container::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
+button {
+  padding: 1em 5em;
+  width: 250px;
 }
-
-.scroll-container::-webkit-scrollbar-track {
-  background: #f0f0f0; /* Background of the scrollbar track */
-  border-radius: 0 1em 1em 0; /* Rounded corners */
-}
-
-.scroll-container::-webkit-scrollbar-thumb {
-  border-radius: 10px; /* Rounded corners */
-  border-radius: 0 1em 1em 0; /* Rounded corners */
-  background: #763a3a; /* Color of the scrollbar thumb */
-}
-
-/* Inner content to make the container scrollable */
-.content {
-  width: auto;
-  padding: 10px;
-}
-/* Example content styling */
-.content div {
-  width: 500px;
-  margin: 10px;
-  height: auto;
-  padding: 10px;
-}
-.input2 {
-  padding: 10px;
-  width: 80%;
-}
-.input-holder {
-  padding: 0 !important;
+.input {
+  padding: 1em;
   width: 100%;
 }
-.dayumm {
-  flex-direction: row;
-  width: 33%;
-  gap: 1px;
-  padding: 0 !important;
-  justify-content: space-between !important;
-}
-.client-name {
-  border-radius: 1em;
+/* ADMIN SIGN UP */
+.admin-sign-up {
   border: 1px solid black;
-  color: #4e7966;
-  background-color: white;
+  flex-direction: column;
+  margin: 1em;
   justify-content: start;
+  gap: 1em;
+  text-align: left;
+  padding: 2em;
+  height: 80vh;
+  width: 50vw;
+}
+.admin-sign-up-container {
+  border: 1px solid black;
+  justify-content: start;
+  flex-direction: column;
   align-items: start;
-  padding: 2em !important;
+  gap: 1em;
+  padding: 1em;
+  width: 30em;
 }
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  display: flex;
-  background-color: #fff;
-  justify-content: space-around;
-  margin: 15% auto; /* Center the modal */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  cursor: pointer;
+.column2 {
+  border: 1px solid black;
+  width: 100%;
+  gap: 2em;
+  flex: 1;
 }
