@@ -6,6 +6,7 @@
 body {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 div {
   display: flex;
@@ -55,6 +56,7 @@ div {
 }
 .unscrollable {
   height: 100vh;
+  background-color: white;
   width: auto;
   display: flex;
   justify-content: center;
@@ -62,7 +64,6 @@ div {
 }
 /* SECTION #2 */
 .admin-login {
-  border: 1px solid black;
   border-radius: 2em;
   flex-direction: column;
   padding: 5em;
@@ -77,29 +78,58 @@ button {
   width: 100%;
 }
 /* ADMIN SIGN UP */
-.admin-sign-up {
-  border: 1px solid black;
-  flex-direction: column;
-  margin: 1em;
-  justify-content: start;
-  gap: 1em;
-  text-align: left;
-  padding: 2em;
-  height: 80vh;
-  width: 50vw;
-}
+
 .admin-sign-up-container {
-  border: 1px solid black;
+  width: 90%;
   justify-content: start;
+  border-radius: 2em;
+  color: #4e7966;
+  background-color: white;
   flex-direction: column;
   align-items: start;
   gap: 1em;
-  padding: 1em;
-  width: 30em;
+  padding: 2em;
 }
 .column2 {
-  border: 1px solid black;
   width: 100%;
   gap: 2em;
   flex: 1;
+}
+/* SCROLL CONTAINER - THE THING THAT SCROLLS */
+.scroll-container {
+  justify-content: start;
+  color: white;
+  padding: 2em;
+  height: 80vh;
+  width: 45vw;
+  gap: 1em;
+  flex-direction: column;
+  background-color: #4e7966;
+  overflow-y: scroll;
+  border-radius: 0.7em; /* Rounded corners */
+}
+
+/* Custom scrollbar styles */
+.scroll-container::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Background of the scrollbar track */
+  border-radius: 0 1em 1em 0; /* Rounded corners */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  border-radius: 10px; /* Rounded corners */
+  border-radius: 0 1em 1em 0; /* Rounded corners */
+  background: #763a3a; /* Color of the scrollbar thumb */
+}
+
+button {
+  background-color: #763a3a; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 24px 52px; /* Some padding */
+  font-size: 16px; /* Increase font size */
+  border-radius: 12px; /* Rounded corners */
 }

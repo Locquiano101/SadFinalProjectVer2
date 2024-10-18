@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LOGIN</title>
+    <title>Login</title>
+    <link rel="icon" href="penro (0).png" type="image/png" />
     <link
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap"
       rel="stylesheet"
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <!-- <div id="section1" class="unscrollable">
+    <div id="section1" class="unscrollable">
       <div class="login-container">
         <div class="login-container-left">
           <p id="login">CNPENRO-FTSMS</p>
@@ -24,24 +25,36 @@
             Projects
           </p>
         </div>
-        <div class="login-container-middle">
-          <div class="logo-holder">
-            <img src="rock.svg" alt="rock" height="64px" width="auto" />
+        <a href="#section2">
+          <div class="login-container-middle">
+            <div class="logo-holder">
+              <img
+                src="admin-profile.svg"
+                alt="admin"
+                height="100px"
+                width="auto"
+              />
+            </div>
+            <br />
+            <br />
+            <p class="user-description">ADMINISTRATOR</p>
           </div>
-          <br />
-          <br />
-          <p class="user-description">ADMINISTRATOR</p>
-        </div>
+        </a>
         <div class="login-container-right">
           <div class="logo-holder">
-            <img src="rock.svg" alt="rock" height="64px" width="auto" />
+            <img
+              src="client-profile.svg"
+              alt="client"
+              height="100px"
+              width="auto"
+            />
           </div>
           <br />
           <br />
           <p class="user-description">CLIENT</p>
         </div>
       </div>
-    </div> -->
+    </div>
     <div id="section2" class="unscrollable">
       <div class="admin-login">
         <h1>ADMINISTRATOR</h1>
@@ -49,25 +62,56 @@
           Process and Monitor Applications for Sand / Gravel & Quarry Permits,
           and Requests for Forest Tree Seedlings
         </p>
-        <div class="button-container">
-          <button>GOVERNOR</button>
-        </div>
-        <div class="button-container">
-          <button>PENRO OFFICER</button>
-        </div>
-        <div class="button-container">
-          <button>NURSERY OFFICER</button>
-        </div>
+        <a href="#section3">
+          <div class="button-container">
+            <button>GOVERNOR</button>
+          </div>
+        </a>
+        <a href="#section3">
+          <div class="button-container">
+            <button>PENRO OFFICER</button>
+          </div>
+        </a>
+        <a href="#section3">
+          <div class="button-container">
+            <button>NURSERY OFFICER</button>
+          </div>
+        </a>
       </div>
     </div>
 
     <div id="section3" class="unscrollable">
       <div>
         <div class="admin-login">
-          <h1>CNPENRO-MIS</h1>
+          <h1>CNPENRO-FTSMS</h1>
 
           <p style="opacity: 0.5">Admin</p>
-
+          <p>login using</p>
+          <div
+            style="
+              height: 48px;
+              width: 48px;
+              border: 1px solid black;
+              border-radius: 100%;
+            "
+          >
+            <img
+              src="google.png"
+              alt="Description of image"
+              style="width: 36px; height: 36px"
+            />
+          </div>
+          <div
+            style="
+              flex-direction: row;
+              width: 100%;
+              justify-content: space-around;
+            "
+          >
+            <div style="flex: 1; border: 1px solid black"></div>
+            <p style="flex: 1">or</p>
+            <div style="flex: 1; border: 1px solid black"></div>
+          </div>
           <input type="text" name="text" class="input" placeholder="Username" />
 
           <input
@@ -77,22 +121,31 @@
             placeholder="password"
           />
           <div class="button-container">
-            <button>Login</button>
+            <button onclick="openanotherfile2()">Login</button>
           </div>
+          <p>Don't have an Account? <a href="#section4">Sign-up</a></p>
         </div>
       </div>
     </div>
     <div id="section4" class="unscrollable">
-      <div class="admin-sign-up">
-        <h1>Sign Up</h1>
+      <div class="scroll-container">
+        <h1 style="font-size: 64px">Sign Up</h1>
         <div class="admin-sign-up-container">
           <h1>Name</h1>
           <div class="column2">
             <input
               type="text"
-              name="text"
+              name="firstName"
               class="input"
-              placeholder="Username"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="column2">
+            <input
+              type="text"
+              name="lastName"
+              class="input"
+              placeholder="Last Name"
             />
           </div>
           <div class="column2">
@@ -100,31 +153,22 @@
               type="text"
               name="text"
               class="input"
-              placeholder="Username"
-            />
-          </div>
-          <div class="column2">
-            <input
-              type="text"
-              name="text"
-              class="input"
-              placeholder="Username"
+              placeholder="Middle initial (Optional)"
             />
             <input
               type="text"
               name="text"
               class="input"
-              placeholder="Username"
+              placeholder="Suffix (Optional)"
             />
           </div>
           <h1>Gender</h1>
           <div class="column2">
             <select class="input" id="gender" name="gender">
-              <option value="" disabled selected>Select your option</option>
+              <option value="" disabled selected>Gender</option>
               <!-- Placeholder option -->
               <option value="male">Male</option>
               <option value="female">Female</option>
-              <option value="non-binary">Non-binary</option>
               <option value="other">Other</option>
             </select>
           </div>
@@ -136,17 +180,24 @@
               type="text"
               name="text"
               class="input"
-              placeholder="Username"
+              placeholder="Phone No.: (+63) *** *** ****"
             />
           </div>
-
+          <div class="column2">
+            <input
+              type="text"
+              name="emailAddress"
+              class="input"
+              placeholder="Email: user@example.com"
+            />
+          </div>
           <h1>Address</h1>
           <div class="column2">
             <input
               type="text"
-              name="text"
+              name="streetPurok"
               class="input"
-              placeholder="Username"
+              placeholder="Street / Purok"
             />
           </div>
           <div class="column2">
@@ -154,7 +205,7 @@
               type="text"
               name="text"
               class="input"
-              placeholder="Username"
+              placeholder="Baranggay"
             />
           </div>
           <div class="column2">
@@ -162,7 +213,7 @@
               type="text"
               name="text"
               class="input"
-              placeholder="Username"
+              placeholder="City / Municipality"
             />
           </div>
           <div class="column2">
@@ -170,13 +221,13 @@
               type="text"
               name="text"
               class="input"
-              placeholder="Username"
+              placeholder="Province"
             />
           </div>
           <h1>Nationality</h1>
           <div class="column2">
             <select class="input" id="gender" name="gender">
-              <option value="" disabled selected>Select your option</option>
+              <option value="" disabled selected>Nationality</option>
               <!-- Placeholder option -->
               <option value="male">Filipino</option>
               <option value="female">American</option>
@@ -185,9 +236,10 @@
           </div>
         </div>
         <div class="button-container">
-          <button>Login</button>
+          <button>Sign Up</button>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

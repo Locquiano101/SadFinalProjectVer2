@@ -4,6 +4,165 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
+    <link rel="icon" href="penro (0).png" type="image/png" />
+    <link rel="stylesheet" href="admin-dashboard.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="sidenav">
+      <div class="sidenav-container">
+        <div>
+          <h1>CNPENRO-FTSMS</h1>
+        </div>
+        <br />
+        <div><i>PENRO ADMIN</i></div>
+        <br />
+
+        <a href="#" class="active" onclick="showDiv('home', this)">Home</a>
+        <a href="#" onclick="showDiv('about', this)">Request</a>
+        <a href="#" onclick="showDiv('services', this)">Notifaction</a>
+        <a href="#" onclick="showDiv('contact', this)">Accounts</a>
+        <a href="#" onclick="showDiv('contact', this)">Reports</a>
+        <a href="#" onclick="showDiv('contact', this)">Inventory</a>
+        <a href="#" onclick="showDiv('contact', this)">Settings</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div id="home" class="home">
+        <div class="dashboard">
+          <h3>Request</h3>
+          <br />
+          <div class="header">
+            <div class="card">
+              <h1>1</h1>
+              <br />
+              <h6 style="color: blue; font-size: 16px">Approved</h6>
+            </div>
+            <div class="card">
+              <h1>1</h1>
+              <br />
+              <h6 style="color: green; font-size: 16px">Approved</h6>
+            </div>
+            <div class="card">
+              <h1>1</h1>
+              <br />
+              <h6 style="color: red; font-size: 16px">Approved</h6>
+            </div>
+            <div class="card1">
+              <h1 style="font-size: 48px">1</h1>
+              <br />
+              <h6 style="font-size: 16px">Approved</h6>
+            </div>
+          </div>
+          <br />
+          <div class="search-bar">
+            <div>Search</div>
+            <div>(search-icon)</div>
+          </div>
+        </div>
+        <br />
+        <div>
+          <div>
+            <h1 style="color: red">Rejected</h1>
+            <div class="flash-card">
+              <div>
+                <div>Application ID</div>
+                <br />
+                <div>00000000</div>
+              </div>
+              <div>
+                <div>Client Request Name</div>
+                <br />
+                <div>Juan Dela Cruz</div>
+              </div>
+              <div>
+                <div>Application Date</div>
+                <br />
+                <div>January 1, 2024</div>
+              </div>
+              <div>
+                <div>Status</div>
+                <br />
+                <div class="actions">
+                  <div>edit</div>
+                  <div>delete</div>
+                  <div>view</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 style="color: blue">Pending</h1>
+        <div class="flash-card">
+          <div>
+            <div>Application ID</div>
+            <br />
+            <div>00000000</div>
+          </div>
+          <div>
+            <div>Client Request Name</div>
+            <br />
+            <div>Juan Dela Cruz</div>
+          </div>
+          <div>
+            <div>Application Date</div>
+            <br />
+            <div>January 1, 2024</div>
+          </div>
+          <div>
+            <div>Status</div>
+            <br />
+            <div class="actions">
+              <div>edit</div>
+              <div>delete</div>
+              <div>view</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 style="color: green">Approved</h1>
+          <div class="flash-card">
+            <div>
+              <div>Application ID</div>
+              <br />
+              <div>00000000</div>
+            </div>
+            <div>
+              <div>Client Request Name</div>
+              <br />
+              <div>Juan Dela Cruz</div>
+            </div>
+            <div>
+              <div>Application Date</div>
+              <br />
+              <div>January 1, 2024</div>
+            </div>
+            <div>
+              <div>Status</div>
+              <br />
+              <div class="actions">
+                <div>edit</div>
+                <div>delete</div>
+                <div>view</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- UNDER DEVELOPMENT -->
+      <div id="about" class="content-div" style="display: none">
+        <h1>UNDER DEVELOPMENT :(</h1>
+        <h3>sorry for the inconvience</h3>
+      </div>
+      <div id="services" class="content-div" style="display: none">
+        <h1>UNDER DEVELOPMENT :(</h1>
+        <h3>sorry for the inconvience</h3>
+      </div>
+      <div id="contact" class="content-div" style="display: none">
+        <h1>UNDER DEVELOPMENT :(</h1>
+        <h3>sorry for the inconvience</h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

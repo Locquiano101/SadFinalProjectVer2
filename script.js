@@ -28,7 +28,7 @@ function moveSlide(TimeInterval) {
 // Auto slide every 3 seconds
 setInterval(() => {
   moveSlide(1);
-}, 3000);
+}, 100000);
 
 /*
  *************** SCROLLING ANIMATION ***************
@@ -122,9 +122,7 @@ function openanotherfile() {
 function openanotherfile2() {
   window.open("admin-dashboard.html", "_blank");
 }
-/*
- *************** SIGN UP BUTTON ***************
- */
+
 document.addEventListener("DOMContentLoaded", function () {
   // Get modal element
   var modal = document.getElementById("myModal");
@@ -152,3 +150,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 });
+/*
+ *************** ADMIN DASHBOARD ***************
+ */
+function showDiv(divId, element) {
+  // Hide all divs
+  var contentDivs = document.getElementsByClassName("content-div");
+  for (var i = 0; i < contentDivs.length; i++) {
+    contentDivs[i].style.display = "none";
+  }
+
+  // Show the selected div
+  document.getElementById(divId).style.display = "block";
+
+  // Remove active class from all links
+  var links = document
+    .getElementsByClassName("sidenav")[0]
+    .getElementsByTagName("a");
+  for (var i = 0; i < links.length; i++) {
+    links[i].classList.remove("active");
+  }
+
+  // Add active class to the clicked link
+  element.classList.add("active");
+}
