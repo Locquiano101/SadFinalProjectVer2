@@ -8,12 +8,7 @@ body {
   flex-direction: column;
   overflow: hidden;
 }
-div {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
+
 .login-container {
   justify-content: center;
   align-items: center;
@@ -30,7 +25,7 @@ div {
 }
 .login-container-right,
 .login-container-middle {
-  background-color: #4e7966;
+  background-color: #115d5b;
 }
 .login-container-middle {
   border-radius: 10em 0 0 10em;
@@ -42,7 +37,7 @@ div {
   width: 250px;
 }
 #login {
-  color: #4e7966;
+  color: #115d5b;
   font-weight: bolder;
   font-size: 64px;
 }
@@ -55,8 +50,8 @@ div {
   color: #ffffff;
 }
 .unscrollable {
-  height: 100vh;
   background-color: white;
+  height: 100vh;
   width: auto;
   display: flex;
   justify-content: center;
@@ -83,7 +78,7 @@ button {
   width: 90%;
   justify-content: start;
   border-radius: 2em;
-  color: #4e7966;
+  color: #115d5b;
   background-color: white;
   flex-direction: column;
   align-items: start;
@@ -104,7 +99,7 @@ button {
   width: 45vw;
   gap: 1em;
   flex-direction: column;
-  background-color: #4e7966;
+  background-color: #115d5b;
   overflow-y: scroll;
   border-radius: 0.7em; /* Rounded corners */
 }

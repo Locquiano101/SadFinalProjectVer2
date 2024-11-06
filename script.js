@@ -28,7 +28,7 @@ function moveSlide(TimeInterval) {
 // Auto slide every 3 seconds
 setInterval(() => {
   moveSlide(1);
-}, 100000);
+}, 1000);
 
 /*
  *************** SCROLLING ANIMATION ***************
